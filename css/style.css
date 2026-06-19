@@ -45,6 +45,8 @@ body{
    LOGO BAR
 ========================= */
 
+/* LOGO BAR */
+
 .logo-bar{
     background:white;
     padding:20px 8%;
@@ -54,25 +56,37 @@ body{
     display:flex;
     align-items:center;
     gap:25px;
+    background:#ffffff;
 }
 
 .logo-section img{
-    width: 140px;px;
+    width:120px;
+    height:auto;
+    object-fit:contain;
+    transition:0.3s ease;
+}
+
+.logo-section img:hover{
+    transform:scale(1.05);
 }
 
 .school-name h1{
+    font-size:42px;
     color:#006b2d;
-    font-size:45px;
+    margin:0;
+    font-weight:700;
 }
 
 .school-name h2{
+    font-size:26px;
     color:#d4af37;
-    font-size:30px;
+    margin:5px 0;
 }
 
 .school-name p{
     color:#666;
-    margin-top:5px;
+    margin:0;
+    font-size:16px;
 }
 
 /* =========================
@@ -923,4 +937,38 @@ footer{
 
 .value-card a:hover{
     color:#d4af37;
+}
+
+/* =========================
+   STICKY NAVIGATION
+========================= */
+
+.navbar{
+    transition:all 0.3s ease;
+    z-index:1000;
+}
+
+.navbar.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background:white;
+
+    box-shadow:0 2px 15px rgba(0,0,0,0.1);
+
+    animation:slideDown 0.4s ease;
+}
+
+@keyframes slideDown{
+
+    from{
+        transform:translateY(-100%);
+    }
+
+    to{
+        transform:translateY(0);
+    }
+
 }
