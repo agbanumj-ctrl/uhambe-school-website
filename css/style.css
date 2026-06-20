@@ -1243,10 +1243,21 @@ footer{
     }
 
     .navbar ul.show{
-        display:flex;
+    display:flex !important;
+    flex-direction:column;
+    background:#006b2d;
+}
     }
 
     .navbar li{
         text-align:center;
     }
+.navbar ul li{
+    list-style:none;
+}
+
+.navbar ul li a{
+    color:white;
+    display:block;
+    padding:10px;
 }
