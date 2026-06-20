@@ -1261,3 +1261,66 @@ footer{
     display:block;
     padding:10px;
 }
+/* ADMISSIONS PAGE */
+
+.available-classes{
+    padding:80px 8%;
+    background:#f8f9fa;
+}
+
+.class-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.class-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.class-card:hover{
+    transform:translateY(-8px);
+}
+
+.class-card h3{
+    color:#006b2d;
+    margin-bottom:15px;
+}
+
+.admission-contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.contact-box p{
+    margin-bottom:15px;
+    font-size:18px;
+}
+.value-card i{
+    color:#006b2d;
+    font-size:28px;
+    margin-right:10px;
+}
+
+.subject-box li{
+    margin-bottom:10px;
+}
+
+.page-hero-content h1{
+    font-size:48px;
+    font-weight:700;
+}
