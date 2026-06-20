@@ -15,3 +15,17 @@ window.addEventListener("scroll", function () {
     }
 
 });
+// MOBILE MENU
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-links");
+
+if(menuToggle && navMenu){
+
+    menuToggle.addEventListener("click", function(){
+
+        navMenu.classList.toggle("show");
+
+    });
+
+}                                                            
